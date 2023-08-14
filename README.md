@@ -3,6 +3,8 @@
 A customizable Animations for React Native using [React Native
 Reanimated](https://docs.swmansion.com/react-native-reanimated/).
 
+![React Native Animations](https://github.com/blaiti/React-Native-Animations/assets/32510139/424dd910-bacf-430d-a703-30e14e3a5201)
+
 ## Table of Contents
 - [Tech Stack](#tech-stack)
 - [Quick Start](#quick-start)
