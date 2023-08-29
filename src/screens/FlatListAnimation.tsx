@@ -6,9 +6,7 @@ import {Colors, Mixins, Spacing} from '../styles';
 import users from '../constants/users';
 import UserCard from '../components/UserCard';
 
-type Props = {};
-
-function FlatListAnimation({}: Props) {
+function FlatListAnimation() {
   const viewableItems = useSharedValue<ViewToken[]>([]);
 
   const onViewRef = React.useRef(({viewableItems: vItems}) => {
