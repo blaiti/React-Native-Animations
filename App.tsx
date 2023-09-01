@@ -10,9 +10,10 @@ import {SafeAreaView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
+import RootScreen from './src/screens';
 import FlatListAnimation from './src/screens/FlatListAnimation';
 import ProgressBarAnimation from './src/screens/ProgressBarAnimation';
-import RootScreen from './src/screens';
+import LoaderAnimation from './src/screens/LoaderAnimation';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ function App(): JSX.Element {
           <Stack.Screen name="Root" component={RootScreen} />
           <Stack.Screen name="FlatList" component={FlatListAnimation} />
           <Stack.Screen name="ProgressBar" component={ProgressBarAnimation} />
+          <Stack.Screen name="Loader" component={LoaderAnimation} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

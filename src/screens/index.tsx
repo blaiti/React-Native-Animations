@@ -22,6 +22,13 @@ function RootScreen() {
         onPress={() => navigation.navigate('ProgressBar')}>
         <Text style={styles.itemText}>Progress Bar Animation</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        activeOpacity={0.5}
+        style={styles.itemContainer}
+        onPress={() => navigation.navigate('Loader')}>
+        <Text style={styles.itemText}>Loader Animation</Text>
+      </TouchableOpacity>
     </View>
   );
 }
