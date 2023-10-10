@@ -14,6 +14,7 @@ import RootScreen from './src/screens';
 import FlatListAnimation from './src/screens/FlatListAnimation';
 import ProgressBarAnimation from './src/screens/ProgressBarAnimation';
 import LoaderAnimation from './src/screens/LoaderAnimation';
+import ToastAnimation from './src/screens/ToastAnimation';
 
 const Stack = createStackNavigator();
 
@@ -22,10 +23,11 @@ function App(): JSX.Element {
     <SafeAreaView style={{flex: 1}}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Root" component={RootScreen} />
+          <Stack.Screen name="Home" component={RootScreen} />
           <Stack.Screen name="FlatList" component={FlatListAnimation} />
           <Stack.Screen name="ProgressBar" component={ProgressBarAnimation} />
           <Stack.Screen name="Loader" component={LoaderAnimation} />
+          <Stack.Screen name="Toast" component={ToastAnimation} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
